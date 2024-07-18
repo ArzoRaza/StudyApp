@@ -42,7 +42,7 @@ function RootLayoutNav() {
   return (
       
       <View>
-          
+          <text>hello</text>
       </View>
   );
 }
