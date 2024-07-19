@@ -1,22 +1,19 @@
-import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { useFonts } from 'expo-font';
-import * as SplashScreen from 'expo-splash-screen';
-import { useEffect } from 'react';
-import 'react-native-reanimated';
+import FontAwesome from "@expo/vector-icons/FontAwesome";
+import { useFonts } from "expo-font";
+import * as SplashScreen from "expo-splash-screen";
+import React, { useEffect, useState } from "react";
+import "react-native-reanimated";
 
-import { View } from 'react-native';
+import { View } from "react-native";
+import OnBoarding from "./(routes)/onboarding";
 
-export {
-  ErrorBoundary,
-} from 'expo-router';
-
-
+export { ErrorBoundary } from "expo-router";
 
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
     ...FontAwesome.font,
   });
 
@@ -38,11 +35,7 @@ export default function RootLayout() {
 }
 
 function RootLayoutNav() {
+  const [isLoggeIn, setisLoggedIn] = useState(false);
 
-  return (
-      
-      <View>
-          <text>hello</text>
-      </View>
-  );
+  return <>{isLoggeIn ? <View></View> : <OnBoarding />}</>;
 }
