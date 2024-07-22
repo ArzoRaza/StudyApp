@@ -6,12 +6,52 @@ import {
 
 
 export const styles = StyleSheet.create({
-    firstContainer:{
+    firstContainer: {
         alignItems: "center",
         marginTop: 50, 
     },
-    logo:{
+    logo: {
         width: wp("23%"),
         height: hp("10%"),
     },
+    titleWrapper: {
+        flexDirection:"row",
+    },
+    titleTextShape1: {
+        position: "absolute",
+        left: -28,
+        top: -20,
+    },
+    titleText: {
+        fontSize: hp("4%"),
+        textAlign: "center",
+    },
+    titleTextShape2: {
+        position: "absolute",
+        right: -40,
+        top: -20,
+    },
+    titleTextShape3: {
+        position: "absolute",
+        left: 60,
+    },
+    dscpWrapper: {
+        marginTop: 30,
+    },
+    dscpText: {
+        textAlign: "center",
+        color: "#575757",
+        fontSize: hp("2%"),
+    },
+    buttonWrapper: {
+        backgroundColor: "#2467EC",
+        width: wp("92%"),
+        paddingVertical: 18,
+        borderRadius: 8,
+        marginTop: 40,
+    },
+    buttonText: {
+        color: "white",
+        textAlign: "center",
+    }
 })
