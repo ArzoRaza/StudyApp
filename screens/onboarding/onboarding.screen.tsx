@@ -40,30 +40,31 @@ export default function OnBoardingScreen() {
           />
         </View>
         <View>
-            <Image
-              style={styles.titleTextShape3}
-              source={require("@/assets/onboarding/shape_6.png")}
-            />
-            <Text style={[styles.titleText, {fontFamily:"Raleway_700Bold"}]}>
-              XpedioLive
-            </Text>
-          </View>
-          <View style={styles.dscpWrapper}>
-            <Text style={[styles.dscpText, {fontFamily: "Nunito_400Regular"}]}>
-              Explore a variety of interactive lesson,
-            </Text>
-            <Text style={[styles.dscpText, {fontFamily: "Nunito_400Regular"}]}>
-              Video, Quizze & Assignment.
-            </Text>
-          </View>
-          <TouchableOpacity 
+          <Image
+            style={styles.titleTextShape3}
+            source={require("@/assets/onboarding/shape_6.png")}
+          />
+          <Text style={[styles.titleText, { fontFamily: "Raleway_700Bold" }]}>
+            XpedioLive
+          </Text>
+        </View>
+        <View style={styles.dscpWrapper}>
+          <Text style={[styles.dscpText, { fontFamily: "Nunito_400Regular" }]}>
+            Explore a variety of interactive lesson,
+          </Text>
+          <Text style={[styles.dscpText, { fontFamily: "Nunito_400Regular" }]}>
+            Video, Quizze & Assignment.
+          </Text>
+        </View>
+        <TouchableOpacity
           style={styles.buttonWrapper}
-          onPress={() => router.push("/(routes)/welcome-intro")}
-          >
-            <Text style={[styles.buttonText,  {fontFamily: "Nunito_700Bold"}]}>
-              Getting Started
-            </Text>
-          </TouchableOpacity>
+          onPress={function () {router.push("/(routes)/welcome_intro")}}
+        >
+          <Text style={[styles.buttonText, { fontFamily: "Nunito_700Bold" }]}>
+            Getting Started
+          </Text>
+        </TouchableOpacity>
+
       </View>
     </LinearGradient>
   );
