@@ -45,13 +45,14 @@ export const styles = StyleSheet.create({
     },
     buttonWrapper: {
         backgroundColor: "#2467EC",
-        width: wp("92%"),
-        paddingVertical: 18,
+        width: wp("50%"),
+        paddingVertical: 15,
         borderRadius: 8,
         marginTop: 40,
     },
     buttonText: {
         color: "white",
         textAlign: "center",
+        fontSize: 20,
     }
 })

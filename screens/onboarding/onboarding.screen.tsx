@@ -3,6 +3,7 @@ import { useFonts, Raleway_700Bold } from "@expo-google-fonts/raleway";
 import { Nunito_400Regular, Nunito_700Bold } from "@expo-google-fonts/nunito";
 import { LinearGradient } from "expo-linear-gradient";
 import { styles } from "@/styles/onboarding/onboard";
+import { router } from "expo-router";
 
 export default function OnBoardingScreen() {
   let [fontsloaded, fontError] = useFonts({
@@ -55,7 +56,10 @@ export default function OnBoardingScreen() {
               Video, Quizze & Assignment.
             </Text>
           </View>
-          <TouchableOpacity style={styles.buttonWrapper}>
+          <TouchableOpacity 
+          style={styles.buttonWrapper}
+          onPress={() => router.push("/(routes)/welcome-intro")}
+          >
             <Text style={[styles.buttonText,  {fontFamily: "Nunito_700Bold"}]}>
               Getting Started
             </Text>
