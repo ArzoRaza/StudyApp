@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 import {
   Nunito_400Regular,
   Nunito_600SemiBold,
@@ -11,7 +11,6 @@ import { onboardingSwiperData } from "@/constants/constans";
 import { router } from "expo-router";
 import { commonStyles } from "@/styles/common/commonStyle";
 import { styles } from "@/styles/onboarding/onboard";
-// import { onboardingSwiperDataType } from "@/types"; // Ensure you have this type
 
 export default function welcomeIntroScreen() {
   let [fontsLoaded, fontError] = useFonts({
@@ -28,10 +27,16 @@ export default function welcomeIntroScreen() {
     return (
       <LinearGradient
         colors={["#E5ECF9", "#F6F7F9", "#E8EEF9"]}
-        style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
+        style={{ flex: 1, paddingHorizontal: 16}}
       >
-        <View>
-          {/* Your content here */}
+        <View style={{marginTop:80}}>
+          <Image 
+          source={item.image}
+          style={{alignSelf: "center", marginBottom: 30}}
+          />
+          <Text style={[commonStyles.activeDotStyle, { fontFamily: "Raleway_700Bold"}]}>
+          {item.title}
+          </Text>
         </View>
       </LinearGradient>
     );
@@ -76,3 +81,10 @@ export default function welcomeIntroScreen() {
     />
   );
 }
+
+const styles = StyleSheet.create({
+  slideImage: {
+    alignSelf: "center",
+    marginBottom: 30,
+  },
+})

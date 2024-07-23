@@ -14,14 +14,15 @@ export const commonStyles = StyleSheet.create({
     buttonContainer: {
         backgroundColor: "#2467EC",
         width: responsiveWidth(88),
-        height: responsiveHeight(2.5),
+        height: responsiveHeight(4),
         borderRadius: 5,
         marginHorizontal: 5,
+        marginBottom: 15,
     }, 
     dotStyle: {
         backgroundColor: "#2467EC",
-        width: responsiveHeight(2.5),
-        height: responsiveHeight(2.5),
+        width: responsiveHeight(2),
+        height: responsiveHeight(2),
         borderRadius: 5,
         marginHorizontal: 5,
     },
@@ -29,7 +30,7 @@ export const commonStyles = StyleSheet.create({
         backgroundColor: "#2467Ec",
         width: responsiveWidth(2.5),
         height: responsiveWidth(2.5),
-        borderRadius: 5,
+        borderRadius: 10,
         marginHorizontal: 5,
     },
 });

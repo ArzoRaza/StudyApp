@@ -1,4 +1,5 @@
 type onboardingSwiperDataType = {
+    slideImage: ImageSourcePropType | undefined;
     id: number;
     title: string;
     description: string;
