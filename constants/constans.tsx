@@ -5,6 +5,7 @@ export const onboardingSwiperData: onboardingSwiperDataType[] = [
       description: "Our engaging learning videos will spark",
       sortDescription: "your curiosity & enjoyable.",
       image: require("@/assets/onboarding/intro_1.png"),
+      slideImage: undefined
     },
     {
       id: 2,
@@ -12,6 +13,7 @@ export const onboardingSwiperData: onboardingSwiperDataType[] = [
       description: "Our comprehensive our courses and expert",
       sortDescription: "instructors to guide every step.",
       image: require("@/assets/onboarding/intro_2.png"),
+      slideImage: undefined
     },
     {
       id: 3,
@@ -20,6 +22,7 @@ export const onboardingSwiperData: onboardingSwiperDataType[] = [
       sortDescription: "typically need to complete the required",
       sortDescription2: "coursework & assessments.",
       image: require("@/assets/onboarding/intro_3.png"),
+      slideImage: undefined
     },
   ];
   
