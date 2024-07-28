@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, StyleSheet } from "react-native";
 import {
   Nunito_400Regular,
   Nunito_600SemiBold,
@@ -27,16 +27,25 @@ export default function welcomeIntroScreen() {
     return (
       <LinearGradient
         colors={["#E5ECF9", "#F6F7F9", "#E8EEF9"]}
-        style={{ flex: 1, paddingHorizontal: 16}}
+        style={{ flex: 1, paddingHorizontal: 16 }}
       >
-        <View style={{marginTop:80}}>
-          <Image 
-          source={item.image}
-          style={{alignSelf: "center", marginBottom: 30}}
+        <View style={{ marginTop: 80 }}>
+          <Image
+            source={item.image}
+            style={{ alignSelf: "center", marginBottom: 30 }}
           />
-          <Text style={[commonStyles.activeDotStyle, { fontFamily: "Raleway_700Bold"}]}>
-          {item.title}
+          <Text style={[commonStyles.title, { fontFamily: "Raleway_700Bold" }]}>
+            {item.title}
           </Text>
+          <View style={{marginTop: 15}}>
+            <Text 
+              style={[commonStyles.description, { fontFamily: "Nunito_400Regular" }]}
+            >
+              {item.description}
+            </Text>
+
+          </View>
+
         </View>
       </LinearGradient>
     );
@@ -44,7 +53,7 @@ export default function welcomeIntroScreen() {
 
   const renderNextButton = () => {
     return (
-      <View style={commonStyles.buttonContainer}>
+      <View style={[commonStyles.buttonContainer]}>
         <Text style={[styles.buttonText, { fontFamily: "Nunito_600SemiBold" }]}>
           Next
         </Text>
@@ -58,6 +67,14 @@ export default function welcomeIntroScreen() {
         <Text style={[styles.buttonText, { fontFamily: "Nunito_600SemiBold" }]}>
           Done
         </Text>
+      </View>
+    );
+  };
+
+  const showSkipButton = () => {
+    return (
+      <View style={commonStyles.buttonContainer}>
+        <Text></Text>
       </View>
     );
   };
@@ -82,9 +99,9 @@ export default function welcomeIntroScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const style = StyleSheet.create({
   slideImage: {
     alignSelf: "center",
     marginBottom: 30,
   },
-})
+});

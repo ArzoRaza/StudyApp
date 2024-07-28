@@ -27,10 +27,26 @@ export const commonStyles = StyleSheet.create({
         marginHorizontal: 5,
     },
     activeDotStyle: {
-        backgroundColor: "#2467Ec",
+        backgroundColor: "#000",
         width: responsiveWidth(2.5),
         height: responsiveWidth(2.5),
         borderRadius: 10,
         marginHorizontal: 5,
     },
+    title: {
+        fontSize: heightPercentageToDP("3.5%"),
+        textAlign: "center",
+    },
+    description: {
+        fontSize: heightPercentageToDP("2.5%"),
+        color: "#575757",
+        textAlign: "center",
+    },
+    sortDescription: {
+        fontSize: heightPercentageToDP("1.5%"),
+        color: 'lightgray',
+        textAlign: "center",
+    }
 });
+
+
