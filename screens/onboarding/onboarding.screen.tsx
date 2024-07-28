@@ -44,8 +44,8 @@ export default function OnBoardingScreen() {
             style={styles.titleTextShape3}
             source={require("@/assets/onboarding/shape_6.png")}
           />
-          <Text style={[styles.titleText, { fontFamily: "Raleway_700Bold" }]}>
-            XpedioLive
+          <Text style={[styles.titleText2, { fontFamily: "Raleway_700Bold" }]}>
+            TechTutor
           </Text>
         </View>
         <View style={styles.dscpWrapper}>

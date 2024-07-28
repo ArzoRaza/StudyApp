@@ -26,6 +26,11 @@ export const styles = StyleSheet.create({
         fontSize: hp("4%"),
         textAlign: "center",
     },
+    titleText2: {
+        fontSize: hp("4%"),
+        textAlign: "center",
+        color: "#2467EC",
+    },
     titleTextShape2: {
         position: "absolute",
         right: -40,
@@ -55,5 +60,10 @@ export const styles = StyleSheet.create({
         textAlign: "center",
         fontSize: 20,
     },
+    textBtn: {
+        color: "RED",
+        textAlign: "center",
+        fontSize: 20,
+    }
 
 })

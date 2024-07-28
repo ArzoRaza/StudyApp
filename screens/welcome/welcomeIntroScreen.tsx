@@ -43,6 +43,13 @@ export default function welcomeIntroScreen() {
             >
               {item.description}
             </Text>
+            <View style={{marginTop: 15}}>
+            <Text 
+              style={[commonStyles.description, { fontFamily: "Nunito_400Regular" }]}
+            >
+              {item.sortDescription}
+            </Text>
+            </View>
 
           </View>
 

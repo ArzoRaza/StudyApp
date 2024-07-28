@@ -14,23 +14,25 @@ export const commonStyles = StyleSheet.create({
     buttonContainer: {
         backgroundColor: "#2467EC",
         width: responsiveWidth(88),
-        height: responsiveHeight(4),
+        height: responsiveHeight(5.5),
         borderRadius: 5,
-        marginHorizontal: 5,
-        marginBottom: 15,
+        alignSelf: "center",
+        justifyContent: "center",
+        alignItems: "center",
+       
     }, 
     dotStyle: {
-        backgroundColor: "#2467EC",
-        width: responsiveHeight(2),
-        height: responsiveHeight(2),
+        backgroundColor: "#C6C7CC",
+        width: responsiveWidth(2),
+        height: responsiveWidth(2),
         borderRadius: 5,
         marginHorizontal: 5,
     },
     activeDotStyle: {
-        backgroundColor: "#000",
-        width: responsiveWidth(2.5),
-        height: responsiveWidth(2.5),
-        borderRadius: 10,
+        backgroundColor: "#2467EC",
+        width: responsiveWidth(2),
+        height: responsiveWidth(2),
+        borderRadius: 5,
         marginHorizontal: 5,
     },
     title: {
@@ -42,11 +44,7 @@ export const commonStyles = StyleSheet.create({
         color: "#575757",
         textAlign: "center",
     },
-    sortDescription: {
-        fontSize: heightPercentageToDP("1.5%"),
-        color: 'lightgray',
-        textAlign: "center",
-    }
+    
 });
 
 
